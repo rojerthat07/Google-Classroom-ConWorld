@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Classes from './components/Classes';
+import Navigation from './components/Navigation';
+import Chatbox from './components/Chatbox';
+import './App.scss';
+import jennica from './images/jennica.jpg';
+import rowell from './images/rowell.jpg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export class App extends Component {
+
+state = {
+  id:1,
+  message: 'Jer Carlos'
 }
 
-export default App;
+  render() {
+    return (
+      <div className="App">
+         <Navigation />
+      <div className="main-section">
+     
+       <Classes subject="CS" section="1A" teacher="Jennica Montoya" imgsrc={jennica} />
+      <Classes subject="PE 212" section="CS 1A" teacher="Rowell Cruz" imgsrc={rowell} />
+
+      <Chatbox />
+      </div>
+
+    </div>
+    )
+  }
+}
+
+export default App
+

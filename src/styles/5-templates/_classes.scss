@@ -1,0 +1,70 @@
+.classes{
+    border: 1px solid rgb(223, 220, 220);
+    display: inline-block;
+    border-radius: 10px;
+    height: 300px;
+    width:300px;
+    margin:0 .9em;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 1px 1px 8px gray;
+    }
+    .classes__header{
+        margin:0;
+
+        color:white;
+        background-color: rgb(53, 156, 53);
+        padding:1em;
+        border-radius:10px 10px 0px 0px;
+        position: relative;
+        
+        .classes__image{
+            border-radius: 50%;
+            position: absolute;
+            bottom:-30%;
+            right:5%;
+        }
+        .classes__subject{
+            font-size: 1.2em;
+           font-weight: 800;
+        }
+        .classes__section{
+            font-size: .8em;
+            margin-top: .7em;
+        }
+        .classes__teacher{
+            font-size: .8em;
+            margin-top: .6em;
+        }
+        .classes__icon{
+            position: absolute;
+            top:20%;
+            right:10%;
+        }
+
+        i{
+          
+        }
+    }
+    .classes__body{
+        min-height: 145px;
+    }
+    .classes__footer{
+        border-top: 1px solid rgb(223, 220, 220);
+        height:10px;
+        display:grid;
+        justify-content: end;
+        .classes__icons{
+      
+            .classes__icon{
+                font-size: 1.3em;
+                padding:.8em .7em;
+             
+            }
+        }
+    }
+}
+
+
+

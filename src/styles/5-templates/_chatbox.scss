@@ -1,0 +1,60 @@
+.chatbox{
+    position: absolute;
+    right: 3%;
+    bottom:0;
+    max-width: 200px;
+    border: 1px solid rgb(214, 214, 214);
+    
+    
+    .chatbox__heading{
+        max-width: 188px;
+        padding:.5em .3em;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: .9em;
+        border-bottom: 1px solid rgb(207, 205, 205);
+        display: none;
+    }
+
+    .chatbox__box{
+        border: 1px solid rgb(212, 210, 210);
+        cursor: pointer;
+        padding:.5em 4em;
+        font-size: .8em;
+        font-weight: bold;
+        &:hover{
+            border: 1px solid rgb(155, 153, 153);
+        }
+        .chatbox__icon{
+            color: rgb(75, 75, 75);
+        }
+    }
+
+
+    .chatbox__user{
+        
+        padding:.5em .3em;
+        display: none;
+        align-content: center;
+        max-width: 188px;
+        box-sizing: border-box;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(224, 224, 224);
+        }
+      
+     
+
+        .chatbox__image{
+            border-radius: 100%;
+            width:15%;
+            padding:0 .5em;
+        }
+        .chatbox__username{
+          
+            padding-top: .5em;
+            font-size: .8em;
+        }
+    }
+}
+

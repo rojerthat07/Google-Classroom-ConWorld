@@ -1,0 +1,111 @@
+.message{
+    background-color: white;
+    display: block;
+    position: absolute;
+    right:100%;
+    bottom: 0%;
+    min-width: 250px;
+    min-height: 300px;
+    border: 1px solid silver;
+    border-radius: 10px 10px 0 0;
+    .message__header{
+ 
+        min-height: 40px;
+        display: flex;
+        padding:.4em .2em;
+        border-bottom: 1px solid silver;
+        z-index: 2;
+        cursor: pointer;
+
+        .message__picture{
+            border-radius: 100%;
+            width:15%;
+            height: auto;
+            padding:0 .5em;
+        }
+        .message__name{
+            font-weight: bold;
+            font-size: .8em;
+         
+            .message__status{
+                font-size: .7em;
+            }
+            .message__status-indicator{
+                color:rgb(27, 252, 27);
+                font-size: .8em;
+            }
+        }
+        .message__exit{
+            position: absolute;
+            cursor: pointer;
+            top:0;
+            right: 0;
+            border: none;
+            padding:.8em;
+            background-color: transparent;
+        }
+    }
+    .message__body{
+        min-height: 200px;
+        max-height: 200px;
+        padding:.5em 1em;
+        font-size: .9em;
+        overflow: auto;
+
+        .message__timestamp{
+            text-align: center;
+            font-size: .8em;
+            color: rgb(207, 207, 207);
+            font-weight: bold;
+        }
+   
+        
+        .message__body-message{
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            height: auto;
+            margin: 1em 0;
+        }
+        .message__body-picture{
+            border-radius: 100%;
+            width:95%;
+            height: auto;
+            padding:0 .5em;
+        }
+        .message__body-text{
+            background-color: rgb(245, 240, 240);
+            border-radius: 7px;
+            padding:.5em;
+            height: auto;
+            line-height: 1.2em;
+            word-wrap:break-word;
+            max-width:200px;
+           
+        }
+    }
+    .message__footer{
+       
+        .message__footer-message{
+            min-height: 30px;
+            border: none;
+            border-top: 1px solid rgb(209, 208, 208);
+            padding:.3em .5em;
+            min-width: 94%;
+            resize: none;
+            font-size: .9em;
+        }
+        input[type="submit"]{
+            float:right;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background-color: rgb(221, 220, 220);
+            padding:.3em 0;
+            &:hover{
+                background-color: rgb(221, 220, 220);
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
